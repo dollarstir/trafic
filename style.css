@@ -1,0 +1,109 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#map {
+    height: 80vh;
+    width: 80%;
+    margin: 15px;
+    border: 2px solid #e3e3e3; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Add any additional styling you desire for the inputs and button */
+.input-container {
+    margin: 10px;
+    padding: 10px;
+}
+
+.input-container input {
+    width: 250px;
+    padding: 8px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#submit {
+    width: 100px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #45a049;
+}
+
+/* Add to your existing CSS */
+#use-current-location {
+    margin-left: 5px;
+    padding: 6px 10px;
+    background-color: #f0ad4e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#use-current-location:hover {
+    background-color: #ec971f;
+}
+
+
+.input-with-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.input-with-icon input {
+    width: 250px; /* Adjust width as needed */
+    padding-right: 30px; /* Make room for the icon */
+    /* Rest of your input styles */
+}
+
+#current-location-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.box{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* Add the rest of your existing styles */
+@media screen and (max-width:425px) {
+    .input-with-icon {
+        /* border: 1px solid; */
+        /* width: 90%; */
+    }
+    .input-container{
+        /* border: 1px solid; */
+        width:80%;
+    }
+}
